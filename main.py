@@ -37,7 +37,6 @@ tabela.loc[tabela['Inatividade 12m'] > 3, 'RiscoCalote'] += 1
 tabela.loc[tabela['Faixa Salarial Anual'] == 'Less than $40K', 'RiscoCalote'] += 2
 
 
-
 clientesCaloteiros = tabela[tabela['RiscoCalote'] >= 5]
 clientesCaloteiros = clientesCaloteiros[['CLIENTNUM', 'RiscoCalote']]
 print(clientesCaloteiros)
